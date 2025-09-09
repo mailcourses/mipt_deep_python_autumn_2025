@@ -78,7 +78,7 @@ class TestUser(unittest.TestCase):
             ]
             self.assertEqual(calls, mock_api.mock_calls)
 
-            #friends = usr.get_friends("is")
+            # friends = usr.get_friends("is")
 
     @mock.patch("user.fetch_vk_api")
     def test_friends_no_filter(self, mock_api):
